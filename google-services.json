@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068049772789",
+    "project_id": "aat-travels",
+    "storage_bucket": "aat-travels.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068049772789:android:a2df0d00af54dcefc255bc",
+        "android_client_info": {
+          "package_name": "com.mahaboob123.Vendor_New"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnXXkIPp7H6I_UCgF0oAw4bVU3qs-Udf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
