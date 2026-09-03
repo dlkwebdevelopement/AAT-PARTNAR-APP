@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORLDOFAAT · account deletion</title>
+  <!-- Tailwind + Bootstrap Icons + Material Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,1" />
+  <style>
+    body { 
+      background: linear-gradient(145deg, #f0f5fe 0%, #e0ebf9 100%);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .glass-nav {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.8);
+      box-shadow: 0 4px 20px -8px rgba(0,70,150,0.15);
+    }
+    .glass-footer {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255,255,255,0.8);
+    }
+    .hover-lift { transition: all 0.2s; }
+    .hover-lift:hover { transform: translateY(-2px); box-shadow: 0 20px 30px -12px rgba(0,120,200,0.25); }
+    .footer-link {
+      transition: color 0.2s;
+    }
+    .footer-link:hover {
+      color: #0284c7;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- ========== NAVBAR (global) ========== -->
+  <nav class="glass-nav sticky top-0 z-50 px-4 sm:px-8 py-3 flex items-center justify-between flex-wrap gap-y-2">
+    <!-- left: brand + earth -->
+    <div class="flex items-center gap-2.5">
+      <div class="w-9 h-9 bg-gradient-to-br from-sky-600 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-md">
+        <i class="bi bi-globe2 text-xl"></i>
+      </div>
+      <span class="text-xl font-bold bg-gradient-to-r from-sky-800 to-indigo-700 bg-clip-text text-transparent">WORLDOFAAT</span>
+      <span class="hidden md:inline text-xs bg-white/60 text-sky-700 px-2 py-1 rounded-full border border-sky-200 shadow-sm">trusted travel</span>
+    </div>
+
+    <!-- center: nav links (home, delete, support) -->
+    <div class="flex items-center gap-1 sm:gap-3 text-sm font-medium">
+      <a href="https://worldofaat.com" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-sky-700 bg-white/70 hover:bg-white transition shadow-sm">
+        <i class="bi bi-house-door"></i> <span class="hidden sm:inline">Home</span>
+      </a>
+      <a href="https://worldofaat.com/deleteaccount" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-slate-600 hover:bg-white/80 hover:text-sky-700 transition">
+        <i class="bi bi-person-x"></i> <span class="hidden sm:inline">Delete</span>
+      </a>
+      <a href="https://worldofaat.com/Terms_And_Conditionst" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-slate-600 hover:bg-white/80 hover:text-sky-700 transition">
+        <i class="bi bi-file-text"></i> <span class="hidden sm:inline">Terms</span>
+      </a>
+      <a href="https://worldofaat.com/Terms_And_Conditionst" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-slate-600 hover:bg-white/80 hover:text-sky-700 transition">
+        <i class="bi bi-lock"></i> <span class="hidden sm:inline">Privacy</span>
+      </a>
+    </div>
+
+    <!-- right: support avatar / mail -->
+    <div class="flex items-center gap-2">
+      <a href="mailto:aattravels5@gmail.com" class="hidden sm:flex items-center gap-2 bg-white/80 text-slate-600 px-3 py-1.5 rounded-full text-sm border border-slate-200/70 hover:bg-white transition">
+        <i class="bi bi-envelope text-sky-600"></i>
+        <span class="hidden lg:inline">aattravels5</span>
+      </a>
+      <div class="w-9 h-9 rounded-full bg-gradient-to-br from-sky-100 to-indigo-100 flex items-center justify-center text-sky-700 border-2 border-white shadow-sm">
+        <i class="bi bi-headset"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT (exact same deletion card, full width background) ========== -->
+  <main class="flex-1 flex items-center justify-center px-4 py-8 sm:py-12">
+    <!-- main deletion card (identical to original, but inside main) -->
+    <div class="max-w-2xl w-full bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/40 p-6 md:p-8 hover-lift">
+      
+      <!-- HEADER with WORLDOFAAT logo & earth icon (same) -->
+      <div class="flex items-center justify-between mb-6 border-b border-slate-200/70 pb-4">
+        <div class="flex items-center gap-2">
+          <i class="bi bi-globe2 text-3xl text-sky-600"></i>
+          <span class="text-2xl font-bold tracking-tight bg-gradient-to-r from-sky-800 to-indigo-700 bg-clip-text text-transparent">WORLDOFAAT</span>
+        </div>
+        <div class="flex items-center gap-1 text-sm text-slate-500 bg-slate-100/70 px-3 py-1.5 rounded-full">
+          <i class="bi bi-shield-check text-emerald-600"></i>
+          <span>trusted travel</span>
+        </div>
+      </div>
+
+      <!-- main heading -->
+      <div class="flex items-center gap-3 mb-5">
+        <span class="material-symbols-outlined text-4xl text-sky-600">person_remove</span>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight">Request deletion</h1>
+          <p class="text-sm text-slate-500 flex items-center gap-1 mt-0.5">
+            <i class="bi bi-shield-lock text-sky-500"></i> 
+            secure & permanent removal
+          </p>
+        </div>
+      </div>
+
+      <!-- info alert -->
+      <div class="bg-sky-50/80 rounded-2xl p-5 border border-sky-200 mb-6 flex flex-wrap gap-2 items-start">
+        <i class="bi bi-info-circle-fill text-sky-600 text-xl"></i>
+        <p class="text-slate-700 text-sm flex-1">
+          You can permanently delete your account and personal data. Follow the steps below, or 
+          <a href="mailto:aattravels5@gmail.com" class="inline-flex items-center gap-1 font-medium text-sky-700 underline decoration-sky-300 underline-offset-4 hover:text-sky-900">
+            <i class="bi bi-envelope-paper"></i> contact support
+          </a> 
+          if you run into any trouble.
+        </p>
+      </div>
+
+      <!-- steps section -->
+      <h2 class="text-xl font-semibold flex items-center gap-2 text-slate-700 border-b border-slate-200 pb-2 mb-4">
+        <i class="bi bi-check2-circle text-emerald-600"></i> 
+        Steps to delete your account
+      </h2>
+
+      <div class="grid gap-3 sm:grid-cols-1 mb-8">
+        <!-- step 1 -->
+        <div class="flex items-start gap-4 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 font-semibold text-sm">1</span>
+          <div class="flex-1">
+            <p class="font-medium text-slate-800 flex items-center gap-2"><i class="bi bi-box-arrow-in-right text-sky-600"></i> Log in to your account</p>
+            <p class="text-sm text-slate-500">Use the app or website – make sure you’re using the correct credentials.</p>
+          </div>
+          <i class="bi bi-phone text-slate-400 text-xl"></i>
+        </div>
+        <!-- step 2 -->
+        <div class="flex items-start gap-4 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 font-semibold text-sm">2</span>
+          <div class="flex-1">
+            <p class="font-medium text-slate-800 flex items-center gap-2"><i class="bi bi-person-circle text-sky-600"></i> Go to <span class="bg-slate-100 px-2 py-0.5 rounded text-sm font-mono">My Profile</span> section</p>
+            <p class="text-sm text-slate-500">Located in the main menu (top right or sidebar).</p>
+          </div>
+          <i class="bi bi-gear text-slate-400 text-xl"></i>
+        </div>
+        <!-- step 3 -->
+        <div class="flex items-start gap-4 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm">
+          <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-700 font-semibold text-sm">3</span>
+          <div class="flex-1">
+            <p class="font-medium text-slate-800 flex items-center gap-2"><i class="bi bi-trash3 text-rose-500"></i> Click <span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded text-sm font-medium">Delete account</span></p>
+            <p class="text-sm text-slate-500">Follow the on-screen confirmation — you may need to re-enter your password.</p>
+          </div>
+          <i class="bi bi-check-lg text-emerald-600 text-xl"></i>
+        </div>
+      </div>
+
+      <!-- alt support callout -->
+      <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-5 mb-8 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="p-2 rounded-full bg-amber-100 text-amber-700"><i class="bi bi-envelope-exclamation text-xl"></i></span>
+          <div>
+            <h3 class="font-semibold text-amber-800">Can't access your account?</h3>
+            <p class="text-sm text-amber-700">Email our support team directly.</p>
+          </div>
+        </div>
+        <a href="mailto:aattravels5@gmail.com" class="inline-flex items-center gap-2 bg-white px-5 py-2.5 rounded-full text-sky-700 font-medium border border-sky-200 shadow-sm hover:bg-sky-50 transition-all">
+          <i class="bi bi-envelope-open"></i> aattravels5@gmail.com
+        </a>
+      </div>
+
+      <!-- what happens cards -->
+      <h2 class="text-xl font-semibold flex items-center gap-2 text-slate-700 border-b border-slate-200 pb-2 mb-3">
+        <i class="bi bi-database-slash text-indigo-500"></i> 
+        What happens after deletion
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 flex gap-3 items-start">
+          <i class="bi bi-eraser text-2xl text-indigo-400"></i>
+          <div>
+            <p class="font-semibold text-slate-800">Permanent removal</p>
+            <p class="text-xs text-slate-500 leading-relaxed">All personal data, profile info, history erased from active systems.</p>
+          </div>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 flex gap-3 items-start">
+          <i class="bi bi-clock-history text-2xl text-indigo-400"></i>
+          <div>
+            <p class="font-semibold text-slate-800">Legal retention</p>
+            <p class="text-xs text-slate-500 leading-relaxed">Limited period retention only to comply with legal obligations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- privacy links inline -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 mt-2">
+        <span class="text-sm text-slate-600 flex items-center gap-1"><i class="bi bi-shield-check text-green-600"></i> For more details, see our </span>
+        <div class="flex gap-2">
+          <a href="https://worldofaat.com/Terms_And_Conditionst" class="inline-flex items-center gap-1 bg-white border border-slate-300 hover:border-sky-400 px-4 py-2 rounded-full text-sm text-slate-700 transition-colors">
+            <i class="bi bi-file-earmark-text"></i> Privacy Policy
+          </a>
+          <a href="mailto:aattravels5@gmail.com" class="inline-flex items-center gap-1 bg-sky-600 text-white px-4 py-2 rounded-full text-sm hover:bg-sky-700 transition-colors shadow-sm">
+            <i class="bi bi-send"></i> Contact support
+          </a>
+        </div>
+      </div>
+
+      <!-- internal note -->
+      <div class="text-xs text-slate-400 flex items-center justify-center gap-2 mt-6 pt-2 border-t border-slate-100">
+        <i class="bi bi-check2-circle text-emerald-300"></i>
+        <span>deletion requests usually processed within 48h</span>
+        <span class="material-symbols-outlined text-base text-slate-300">lock</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== GLOBAL FOOTER (full site) ========== -->
+  <footer class="glass-footer mt-auto px-4 sm:px-8 py-6">
+    <!-- main footer content (3 columns) -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+      
+      <!-- column 1: brand -->
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="bi bi-globe2 text-2xl text-sky-600"></i>
+          <span class="font-bold text-slate-800 text-lg">WORLDOFAAT</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Global travel experiences built on trust and transparency. Your journey, our priority.</p>
+        <div class="flex gap-3 mt-3">
+          <i class="bi bi-twitter text-sky-500 hover:text-sky-700 cursor-pointer"></i>
+          <i class="bi bi-instagram text-sky-500 hover:text-sky-700 cursor-pointer"></i>
+          <i class="bi bi-facebook text-sky-500 hover:text-sky-700 cursor-pointer"></i>
+          <i class="bi bi-linkedin text-sky-500 hover:text-sky-700 cursor-pointer"></i>
+        </div>
+      </div>
+      
+      <!-- column 2: quick links -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-link"></i> Quick links</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="https://worldofaat.com" class="footer-link flex items-center gap-2"><i class="bi bi-house-door"></i> Home</a></li>
+          <li><a href="https://worldofaat.com/deleteaccount" class="footer-link flex items-center gap-2"><i class="bi bi-person-x"></i> Delete account</a></li>
+          <li><a href="https://worldofaat.com/Terms_And_Conditionst" class="footer-link flex items-center gap-2"><i class="bi bi-file-text"></i> Terms & Conditions</a></li>
+          <li><a href="https://worldofaat.com/Terms_And_Conditionst" class="footer-link flex items-center gap-2"><i class="bi bi-lock"></i> Privacy Policy</a></li>
+        </ul>
+      </div>
+      
+      <!-- column 3: support -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-headset"></i> Support</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="mailto:aattravels5@gmail.com" class="footer-link flex items-center gap-2"><i class="bi bi-envelope"></i> aattravels5@gmail.com</a></li>
+          <li><a href="#" class="footer-link flex items-center gap-2"><i class="bi bi-telephone"></i> 04362 474017</a></li>
+        </ul>
+      </div>
+      
+      <!-- column 4: legal / badge -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-shield-check"></i> Legal</h4>
+        <div class="bg-white/50 rounded-xl p-3 text-xs text-slate-600 border border-slate-200/60">
+          <p class="mb-1"><i class="bi bi-dot"></i> Data protection compliant</p>
+          <p class="mb-1"><i class="bi bi-dot"></i> GDPR ready</p>
+          <p class="mb-1"><i class="bi bi-dot"></i> Secure deletion process</p>
+          <div class="flex items-center gap-1 mt-2 text-emerald-600"><i class="bi bi-patch-check"></i> Verified platform</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom bar with copyright -->
+    <div class="max-w-6xl mx-auto mt-8 pt-4 border-t border-slate-200/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400">
+      <div class="flex items-center gap-2">
+        <i class="bi bi-c-circle"></i> 2026 WORLDOFAAT. All rights reserved.
+      </div>
+      <div class="flex gap-4 mt-2 sm:mt-0">
+        <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-sky-600 transition">Privacy</a>
+        <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-sky-600 transition">Terms</a>
+    
+      </div>
+      <div class="flex items-center gap-1">
+        <i class="bi bi-globe-europe-africa"></i>
+        <span>travel with trust</span>
+        <i class="bi bi-droplet text-sky-400 ml-1"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

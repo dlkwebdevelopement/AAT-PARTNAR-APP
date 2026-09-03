@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "AAT Partner",
+    "slug": "aat",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/Aatpartner.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app requires access to the camera to upload profile photos, vehicle registrations, and driver documents.",
+        "NSPhotoLibraryUsageDescription": "This app requires access to your photo library to choose profile photos and document images."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Aatpartner.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.aat.partner.driver",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 41,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0f03418b-4123-4ebf-a160-dbbee43fa370"
+      }
+    },
+    "owner": "aat02",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/Aatpartner.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#01803D",
+          "sounds": [
+            "./assets/sounds/car_horn.mp3"
+          ]
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.0.21",
+            "ndkVersion": "26.1.10909125"
+          }
+        }
+      ],
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow this app to access your photos to select documents.",
+          "cameraPermission": "Allow this app to access your camera to take pictures of documents."
+        }
+      ]
+    ]
+  }
+}

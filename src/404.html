@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 · page not found | WORLDOFAAT</title>
+  <!-- Tailwind + Bootstrap Icons + Inter font for clean pro look (same as main site) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body {
+      background: linear-gradient(145deg, #f6f9fc 0%, #edf2f9 100%);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .glass-nav {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.9);
+      box-shadow: 0 4px 20px -8px rgba(0,70,140,0.1);
+    }
+    .glass-footer {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255,255,255,0.8);
+      margin-top: auto;
+    }
+    .footer-link {
+      transition: color 0.2s;
+    }
+    .footer-link:hover {
+      color: #0284c7;
+    }
+    /* 404 specific styling */
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(145deg, #1e3a5f 0%, #2563eb 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 10px 20px -8px rgba(0,80,200,0.3);
+      letter-spacing: -4px;
+    }
+    .globe-spin {
+      animation: slowSpin 24s infinite linear;
+      display: inline-block;
+    }
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-700">
+
+  <!-- ===== PROFESSIONAL NAVBAR (identical to main site) ===== -->
+  <nav class="glass-nav sticky top-0 z-50 px-4 sm:px-8 py-3 flex items-center justify-between flex-wrap gap-y-2">
+    <!-- left: brand with earth icon + WORLDOFAAT -->
+    <div class="flex items-center gap-2.5">
+      <div class="w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-md">
+        <i class="bi bi-globe2 text-xl globe-spin"></i>
+      </div>
+      <span class="text-xl font-bold bg-gradient-to-r from-blue-800 to-indigo-700 bg-clip-text text-transparent">WORLDOFAAT</span>
+      <span class="hidden md:inline text-xs bg-white/60 text-blue-700 px-2 py-1 rounded-full border border-blue-200 shadow-sm">trusted travel</span>
+    </div>
+
+    <!-- center: nav links (same as terms page) -->
+    <div class="flex items-center gap-1 sm:gap-3 text-sm font-medium">
+      <a href="https://worldofaat.com" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-blue-700 bg-white/70 hover:bg-white transition shadow-sm">
+        <i class="bi bi-house-door"></i> <span class="hidden sm:inline">Home</span>
+      </a>
+      <a href="https://worldofaat.com/Terms_And_Conditionst" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-slate-600 hover:bg-white/80 hover:text-blue-700 transition">
+        <i class="bi bi-file-text"></i> <span class="hidden sm:inline">Terms</span>
+      </a>
+      <a href="https://worldofaat.com/Terms_And_Conditionst" class="flex items-center gap-1.5 px-4 py-2 rounded-full text-slate-600 hover:bg-white/80 hover:text-blue-700 transition">
+        <i class="bi bi-lock"></i> <span class="hidden sm:inline">Privacy</span>
+      </a>
+    </div>
+
+    <!-- right: support avatar / mail (identical) -->
+    <div class="flex items-center gap-2">
+      <a href="mailto:aattravels5@gmail.com" class="hidden sm:flex items-center gap-2 bg-white/80 text-slate-600 px-3 py-1.5 rounded-full text-sm border border-slate-200/70 hover:bg-white transition">
+        <i class="bi bi-envelope text-blue-600"></i>
+        <span class="hidden lg:inline">aattravels5</span>
+      </a>
+      <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center text-blue-700 border-2 border-white shadow-sm">
+        <i class="bi bi-headset"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN 404 CONTENT (professional error with personality) ===== -->
+  <main class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex items-center justify-center">
+    
+    <div class="pro-card rounded-3xl p-8 md:p-10 w-full backdrop-blur-sm bg-white/80">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        
+        <!-- left side: big 4 0 4 with globe icon -->
+        <div class="flex-1 text-center md:text-left">
+          <div class="flex items-center justify-center md:justify-start gap-0">
+            <span class="error-code">4</span>
+            <i class="bi bi-globe-asia-australia text-8xl text-blue-600 opacity-80 globe-spin mx-1"></i>
+            <span class="error-code">4</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2 tracking-tight">Page not found</h2>
+          <p class="text-lg text-slate-500 mt-3 max-w-md mx-auto md:mx-0">Looks like you've wandered off the map. The travel destination you're looking for doesn't exist or has been moved.</p>
+          
+          <!-- clear actions -->
+          <div class="flex flex-wrap items-center gap-3 mt-8 justify-center md:justify-start">
+            <a href="https://worldofaat.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2 transition shadow-md">
+              <i class="bi bi-house-door"></i> Back to home
+            </a>
+            <a href="mailto:aattravels5@gmail.com" class="bg-white/90 border border-slate-200 text-slate-700 hover:bg-white hover:text-blue-600 px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2 transition shadow-sm">
+              <i class="bi bi-headset"></i> Contact support
+            </a>
+          </div>
+          
+          <!-- helpful links row (quick) -->
+          <div class="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-slate-500 justify-center md:justify-start">
+            <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-blue-600 flex items-center gap-1"><i class="bi bi-file-text"></i> Terms</a>
+            <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-blue-600 flex items-center gap-1"><i class="bi bi-lock"></i> Privacy</a>
+            <a href="mailto:aattravels5@gmail.com" class="hover:text-blue-600 flex items-center gap-1"><i class="bi bi-envelope"></i> aattravels5</a>
+          </div>
+        </div>
+        
+        <!-- right side: friendly graphic (travel/compass / error related) -->
+        <div class="flex-1 flex justify-center">
+          <div class="relative w-60 h-60 md:w-72 md:h-72 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl flex items-center justify-center border border-white/70 shadow-inner">
+            <!-- decorative travel icons -->
+            <i class="bi bi-compass text-[10rem] text-blue-200 absolute opacity-30"></i>
+            <div class="relative flex flex-col items-center">
+              <i class="bi bi-exclamation-triangle-fill text-5xl text-amber-400 drop-shadow"></i>
+              <span class="font-mono text-slate-400 text-xl mt-2 bg-white/60 px-4 py-1 rounded-full">404</span>
+              <div class="flex gap-2 mt-4">
+                <i class="bi bi-geo-alt-fill text-blue-500"></i>
+                <i class="bi bi-signpost-split text-indigo-400"></i>
+                <i class="bi bi-tree text-emerald-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- subtle note: maybe the url is wrong? -->
+      <div class="mt-10 text-center text-xs text-slate-400 border-t border-slate-200/60 pt-5 flex flex-wrap items-center justify-center gap-2">
+        <i class="bi bi-info-circle"></i>
+        <span>If you typed the URL directly, please check the spelling.</span>
+        <span class="w-1 h-1 rounded-full bg-slate-300 mx-1 hidden sm:inline-block"></span>
+        <i class="bi bi-shield-check text-emerald-500"></i>
+        <span>WORLDOFAAT travel protection active</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== GLOBAL FOOTER (exact copy from terms & privacy) ===== -->
+  <footer class="glass-footer px-4 sm:px-8 py-6">
+    <!-- main footer content (4 columns) -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+      
+      <!-- column 1: brand -->
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center gap-2 mb-2">
+          <i class="bi bi-globe2 text-2xl text-blue-600 globe-spin"></i>
+          <span class="font-bold text-slate-800 text-lg">WORLDOFAAT</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed">Global travel experiences built on trust and transparency. Your journey, our priority.</p>
+        <div class="flex gap-3 mt-3">
+          <i class="bi bi-twitter text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+          <i class="bi bi-instagram text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+          <i class="bi bi-facebook text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+          <i class="bi bi-linkedin text-blue-500 hover:text-blue-700 cursor-pointer"></i>
+        </div>
+      </div>
+      
+      <!-- column 2: quick links -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-link"></i> Quick links</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="https://worldofaat.com" class="footer-link flex items-center gap-2"><i class="bi bi-house-door"></i> Home</a></li>
+          <li><a href="https://worldofaat.com/Terms_And_Conditionst" class="footer-link flex items-center gap-2"><i class="bi bi-file-text"></i> Terms & Conditions</a></li>
+          <li><a href="https://worldofaat.com/Terms_And_Conditionst" class="footer-link flex items-center gap-2"><i class="bi bi-lock"></i> Privacy Policy</a></li>
+          <li><a href="mailto:aattravels5@gmail.com" class="footer-link flex items-center gap-2"><i class="bi bi-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- column 3: support -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-headset"></i> Support</h4>
+        <ul class="space-y-2 text-slate-500">
+          <li><a href="mailto:aattravels5@gmail.com" class="footer-link flex items-center gap-2"><i class="bi bi-envelope"></i> aattravels5@gmail.com</a></li>
+          <li><a href="#" class="footer-link flex items-center gap-2"><i class="bi bi-telephone"></i> 04362 474017</a></li>
+        </ul>
+      </div>
+      
+      <!-- column 4: legal / badge -->
+      <div>
+        <h4 class="font-semibold text-slate-700 mb-3 flex items-center gap-1"><i class="bi bi-shield-check"></i> Legal</h4>
+        <div class="bg-white/50 rounded-xl p-3 text-xs text-slate-600 border border-slate-200/60">
+          <p class="mb-1"><i class="bi bi-dot"></i> Data protection compliant</p>
+          <p class="mb-1"><i class="bi bi-dot"></i> GDPR ready</p>
+          <p class="mb-1"><i class="bi bi-dot"></i> Secure deletion process</p>
+          <div class="flex items-center gap-1 mt-2 text-emerald-600"><i class="bi bi-patch-check"></i> Verified platform</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom bar with copyright (identical) -->
+    <div class="max-w-6xl mx-auto mt-8 pt-4 border-t border-slate-200/60 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400">
+      <div class="flex items-center gap-2">
+        <i class="bi bi-c-circle"></i> 2026 WORLDOFAAT. All rights reserved.
+      </div>
+      <div class="flex gap-4 mt-2 sm:mt-0">
+        <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-blue-600 transition">Privacy</a>
+        <a href="https://worldofaat.com/Terms_And_Conditionst" class="hover:text-blue-600 transition">Terms</a>
+        <a href="#" class="hover:text-blue-600 transition">Cookies</a>
+      </div>
+      <div class="flex items-center gap-1">
+        <i class="bi bi-globe-europe-africa"></i>
+        <span>travel with trust</span>
+        <i class="bi bi-droplet text-blue-400 ml-1"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
